@@ -198,7 +198,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
       <div class="flex justify-start items-start">
         <!-- Section Selection -->
         <div class="m-4">
-          <div>
+          <div class="mb-3">
             <label
               for="section_id"
               class="text-3xl m-1">Select Section</label>
@@ -208,7 +208,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
               name="section_id"
               id="section_id"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-black py-3 px-4 w-[300px]">
               <?php
               // Fetch sections from the database
               $query = "SELECT * FROM tblsection";
@@ -224,7 +224,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
 
         <!-- Teacher Selection -->
         <div class="m-4">
-          <div>
+          <div class="mb-3">
             <label
               for="teacher_id"
               class="text-3xl m-1">Select Teacher</label>
@@ -234,7 +234,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
               name="teacher_id"
               id="teacher_id"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-black py-3 px-4 w-[300px]">
               <?php
               // Fetch teachers from the database
               $query = "SELECT * FROM tblteacher";
@@ -250,7 +250,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
 
         <!-- Subject Selection -->
         <div class="m-4">
-          <div>
+          <div class="mb-3">
             <label
               for="subject_id"
               class="text-3xl m-1">Select Subject</label>
@@ -260,7 +260,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
               name="subject_id"
               id="subject_id"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-black py-3 px-4 w-[300px]">
               <?php
               // Fetch subjects from the database
               $query = "SELECT * FROM tblsubject";
@@ -277,7 +277,7 @@ function addRegularStudent($conn, $student_id, $section_id, $is_regular)
       <div class="m-4 flex justify-start items-start ">
         <div class="relative z-10">
           <button type="submit"
-            class="px-12 py-3 bg-blue-900 rounded-md text-white">
+            class="px-12 py-3 bg-blue-900 hover:bg-blue-500 rounded-md text-white">
             Deploy Assignation
             <img
               src="../admin/Images/assign.svg"

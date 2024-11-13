@@ -95,7 +95,7 @@ if (isset($_GET['delete'])) {
             type="submit"
             value="Submit"
             class="px-4 py-3 rounded-md 
-              text-white text-lg bg-blue-900
+              text-white text-lg bg-blue-900 hover:bg-blue-500
               hover:border-s-4 border-yellow-300 cursor-pointer" /> <!-- Combined submit button -->
         </div>
 
@@ -122,7 +122,7 @@ if (isset($_GET['delete'])) {
                     <div>
                       <!-- Edit Button -->
                       <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?edit=<?php echo $listsubject['subject_id']; ?>"
-                        class="inline-flex items-center justify-center bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">
+                        class="inline-flex items-center justify-center bg-blue-900 hover:bg-blue-500 text-white px-4 py-2 rounded-md">
                         <img src="../admin/Images/update.svg" alt="Update" class="w-5 h-5">
                       </a>
                     </div>
@@ -130,7 +130,7 @@ if (isset($_GET['delete'])) {
                       <!-- Delete Button -->
                       <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?delete=<?php echo $listsubject['subject_id']; ?>"
                         onclick="return confirm('Are you sure you want to delete this subject?');"
-                        class="inline-flex items-center justify-center bg-red-900 text-white px-4 py-2 rounded-md hover:bg-red-800">
+                        class="inline-flex items-center justify-center bg-red-900 hover:bg-red-500 text-white px-4 py-2 rounded-md">
                         <img src="../admin/Images/delete.svg" alt="Delete" class="w-5 h-5">
                       </a>
                     </div>

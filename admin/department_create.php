@@ -216,13 +216,13 @@ if (isset($_GET['delete'])) {
               </div>
               <!-- Using links to handle editing and deleting -->
               <div class="flex justify-start items-center gap-1 mt-3">
-                <div class="bg-green-900 px-3 py-1 rounded-md">
+                <div class="bg-green-900 hover:bg-green-500 px-3 py-1 rounded-md">
                   <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?edit=<?php echo $listDepartment['department_id']; ?>">
                     <img src="../admin/Images/update.svg" alt="School ID"
                       class="w-5 h-5">
                   </a>
                 </div>
-                <div class="bg-red-900 px-3 py-1 rounded-md">
+                <div class="bg-red-900 hover:bg-red-500 px-3 py-1 rounded-md">
                   <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?delete=<?php echo $listDepartment['department_id']; ?>" onclick="return confirm(`Are you sure you want to delete this department ?`);">
                     <img src="../admin/Images/delete.svg" alt="School ID"
                       class="w-5 h-5">

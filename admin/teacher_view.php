@@ -5,7 +5,7 @@ session_start();
 ?>
 
 <?php
-$sql = "SELECT t.school_id, t.name, t.image, 
+$sql = "SELECT t.teacher_id, t.school_id, t.name, t.image, 
 d.department_name, sec.section_name
 FROM tblteacher t
 LEFT JOIN tbldepartment d ON t.department_id = d.department_id
@@ -141,7 +141,7 @@ $result = $conn->query($sql);
       </div>
 
       <div class="fixed top-20 z-10 w-3/4 h-4/6  mx-5  p-2 rounded-md bg-slate-900 text-white
-             hidden modal">
+            hidden  modal">
         <div class="m-1">
           <h1 class="text-white text-lg font-semibold">ADD TEACHER</h1>
         </div>
@@ -158,7 +158,7 @@ $result = $conn->query($sql);
               </div>
               <div>
                 <img id="image-preview"
-                  src="../Profiles User/Teacher 1.png"
+                  src="../Profiles User/Student.png"
                   alt="Image Preview"
                   class="w-64 h-64 object-cover 
                       mt-4 rounded-md">
@@ -182,8 +182,16 @@ $result = $conn->query($sql);
             </div>
             <div class="grid grid-cols-2 gap-6">
               <div class="mt-8">
-                <div class="m-1 flex justify-start items-center">
-                  <label>School ID</label>
+                <div class="m-1 flex justify-between items-center">
+                  <div>
+                    <label>School ID</label>
+                  </div>
+                  <div>
+                    <span>
+                      <img src="../admin/Images/id.svg" alt="School ID"
+                        class="w-9 h-9">
+                    </span>
+                  </div>
                 </div>
                 <div>
                   <input
@@ -193,8 +201,16 @@ $result = $conn->query($sql);
                     minlength="7" maxlength="7" name="school_id"
                     autocomplete="off" value="<?php echo isset($schoolId); ?>">
                 </div>
-                <div class="m-1 flex justify-start items-center">
-                  <label>First Name</label>
+                <div class="m-1 flex justify-between items-center">
+                  <div>
+                    <label>First Name</label>
+                  </div>
+                  <div>
+                    <span>
+                      <img src="../admin/Images/user.svg" alt="School ID"
+                        class="w-7 h-7">
+                    </span>
+                  </div>
                 </div>
                 <div>
                   <input
@@ -203,8 +219,16 @@ $result = $conn->query($sql);
                     placeholder="First Name"
                     name="fname" autocomplete="off">
                 </div>
-                <div class="m-1 flex justify-start items-center">
-                  <label>Last Name</label>
+                <div class="m-1 flex justify-between items-center">
+                  <div>
+                    <label>Last Name</label>
+                  </div>
+                  <div>
+                    <span>
+                      <img src="../admin/Images/user.svg" alt="School ID"
+                        class="w-7 h-7">
+                    </span>
+                  </div>
                 </div>
                 <div>
                   <input
@@ -213,8 +237,8 @@ $result = $conn->query($sql);
                     placeholder="Last Name"
                     name="lname" autocomplete="off">
                 </div>
-                <div class="hidden m-1 flex justify-start items-center">
-                  <label>Email</label>
+                <div class="hidden m-1 flex justify-center items-center">
+
                 </div>
                 <div>
                   <input
@@ -240,13 +264,16 @@ $result = $conn->query($sql);
                     placeholder="Year Level"
                     name="year" autocomplete="off">
                 </div>
-
-
-
-                <div class="mt-2 flex flex-col justify-start items-start">
-                  <div class="m-1 flex justify-start items-start">
+                <div class="mt-2 flex flex-col justify-center items-start">
+                  <div class="m-1 w-full flex justify-between items-start">
                     <div>
-                      <label>Department</label>
+                      <label class="text-white text-lg">Department</label>
+                    </div>
+                    <div>
+                      <span>
+                        <img src="../admin/Images/department.svg" alt="School ID"
+                          class="w-9 h-9">
+                      </span>
                     </div>
                   </div>
                   <div>
@@ -291,17 +318,25 @@ $result = $conn->query($sql);
                   </div>
 
                 </div>
-
                 <div class="mt-8">
+                  <div class="absolute top-5 right-5 cursor-pointer js-close">
+                    <img
+                      src="../admin/Images/close.svg"
+                      alt="close"
+                      class="w-8 h-8">
+                  </div>
                   <div>
                     <button type="submit" name="submit"
-                      class="w-full text-center bg-blue-900 py-2 mt-3 rounded-md hover:border-s-4 border-white">
+                      class="w-full text-center bg-blue-900 hover:bg-blue-500  relative py-2 mt-3 rounded-md hover:border-s-4 border-white">
                       Submit
                     </button>
                   </div>
                   <div>
-                    <div class="w-full text-center bg-blue-900 py-2 mt-3 rounded-md hover:border-s-4 border-white
-                          cursor-pointer js-close">Cancel</div>
+                    <div class="w-full text-center bg-red-900 hover:bg-red-500  relative py-2 mt-3 rounded-md hover:border-s-4 border-white
+                          cursor-pointer js-close">Cancel
+                      <img src="../admin/Images/cancel.svg" alt="School ID"
+                        class="w-7 h-7 absolute top-2 left-16">
+                    </div>
                   </div>
                 </div>
               </div>
@@ -366,20 +401,21 @@ $result = $conn->query($sql);
                     <div class="m-1">
                       <a href="#view">
                         <img src="../admin/Images/view.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-green-900 top-1 left-8">
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-green-900 hover:bg-green-500 top-1 left-8">
                       </a>
                     </div>
                     <div class="m-1">
                       <a href="#update">
                         <img src="../admin/Images/update.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-blue-900 top-1 left-8">
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-blue-900 hover:bg-blue-500 top-1 left-8">
                       </a>
                     </div>
                     <div class="m-1">
-                      <a href="#delete">
-                        <img src="../admin/Images/delete.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-red-900 top-1 left-8">
+                      <a href="../admin/delete.php?deleteId=<?php echo $row['teacher_id']; ?>">
+                        <img src="../admin/Images/delete.svg" alt="Delete Teacher"
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-red-900 hover:bg-red-500 top-1 left-8">
                       </a>
+
                     </div>
                   </div>
                 </td>

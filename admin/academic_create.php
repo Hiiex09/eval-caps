@@ -229,7 +229,7 @@ $conn->close();
                 <option value="2" <?php echo ($edit_semester == '2') ? 'selected' : ''; ?>>Second Semester</option>
               </select>
             </div>
-            <div class="mx-44 mt-2 relative hover:border-s-4 border-yellow-400 bg-blue-900 w-[219px] py-2 rounded-md text-center text-white">
+            <div class="mx-44 mt-2 relative hover:border-s-4 border-yellow-400 bg-blue-900 hover:bg-blue-500 w-[219px] py-2 rounded-md text-center text-white">
               <button
                 type="submit"
                 name="save">
@@ -287,7 +287,7 @@ $conn->close();
                 </td>
                 <td class="px-4 py-2 text-center border">
                   <div class="flex justify-center items-center">
-                    <div class="mx-1 bg-blue-900 rounded-md p-1 flex justify-center items-center">
+                    <div class="mx-1 bg-blue-900 hover:bg-blue-500 rounded-md p-1 flex justify-center items-center">
                       <button class="btn1">
                         <a
                           href="?editid=<?php echo $row['schoolyear_id']; ?>">
@@ -300,7 +300,7 @@ $conn->close();
                         </a>
                       </button>
                     </div>
-                    <div class="mx-1 bg-red-900 rounded-md p-1 flex justify-center items-center">
+                    <div class="mx-1 bg-red-900 hover:bg-red-500 rounded-md p-1 flex justify-center items-center">
                       <a class="btn1" href="?delete_id=<?php echo $row['schoolyear_id']; ?>"
                         onclick="return confirm('Are you sure you want to delete this school year?')">
                         <div>

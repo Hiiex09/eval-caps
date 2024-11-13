@@ -212,19 +212,19 @@ $result = $conn->query($sql);
                     <div class="w-full m-1">
                       <a href="#view">
                         <img src="../admin/Images/view.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-green-900 top-1 left-8">
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-green-900 hover:bg-green-500 top-1 left-8">
                       </a>
                     </div>
                     <div class="w-full m-1">
                       <a href="#update">
                         <img src="../admin/Images/update.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-blue-900 top-1 left-8">
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-blue-900 hover:bg-blue-500 top-1 left-8">
                       </a>
                     </div>
                     <div class="w-full m-1">
                       <a href="#delete">
                         <img src="../admin/Images/delete.svg" alt="School ID"
-                          class="w-8 h-8 px-2 rounded-md py-1 bg-red-900 top-1 left-8">
+                          class="w-8 h-8 px-2 rounded-md py-1 bg-red-900 hover:bg-red-500 top-1 left-8">
                       </a>
                     </div>
                   </div>

@@ -91,8 +91,8 @@ if (isset($_GET['delete'])) {
             type="submit"
             value="Submit"
             class="px-4 py-3 rounded-md 
-              text-white text-lg bg-blue-900
-              hover:border-s-4 border-orange-800 cursor-pointer" /> <!-- Combined submit button -->
+              text-white text-lg bg-blue-900 hover:bg-blue-500
+              hover:border-s-4 border-yellow-300 cursor-pointer" /> <!-- Combined submit button -->
         </div>
       </div>
     </form>
@@ -121,7 +121,7 @@ if (isset($_GET['delete'])) {
                 <div class="flex justify-center items-center gap-2">
                   <div>
                     <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?edit=<?php echo $listCriteria['criteria_id']; ?>">
-                      <div class="bg-blue-900 px-3 py-1 rounded-md">
+                      <div class="bg-blue-900 hover:bg-blue-500 px-3 py-1 rounded-md">
                         <img src="../admin/Images/update.svg" alt="School ID"
                           class="w-6 h-6">
                       </div>
@@ -130,7 +130,7 @@ if (isset($_GET['delete'])) {
                   <div>
                     <a href="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>?delete=<?php echo $listCriteria['criteria_id']; ?>"
                       onclick="return confirm('Are you sure you want to delete this criteria?');">
-                      <div class="bg-red-900 px-3 py-1 rounded-md">
+                      <div class="bg-red-900 hover:bg-red-500 px-3 py-1 rounded-md">
                         <img src="../admin/Images/delete.svg" alt="School ID"
                           class="w-6 h-6">
                       </div>

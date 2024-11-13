@@ -194,7 +194,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit') {
           <input
             type="submit"
             value="<?php echo $form_action == 'add' ? 'Add Section' : 'Update Section'; ?>"
-            class="bg-blue-900 px-4 py-3 rounded-md w-[500px] mt-4 text-white
+            class="bg-blue-900 hover:bg-blue-500 px-4 py-3 rounded-md w-[500px] mt-4 text-white
                cursor-pointer hover:border-s-8 border-yellow-300">
           <img
             src="../admin/Images/send.svg"
@@ -226,14 +226,14 @@ if (isset($_GET['action']) && $_GET['action'] == 'edit') {
               <td class="px-4 py-2 text-start border"><?php echo $row['year_level']; ?></td>
               <td class="px-4 py-2 text-start border">
                 <div class="flex justify-center items-center gap-2">
-                  <div class="bg-blue-900 px-2 py-1 rounded-md">
+                  <div class="bg-blue-900 hover:bg-blue-500 px-2 py-1 rounded-md">
                     <!-- Update link -->
                     <a href="?action=edit&section_id=<?php echo $row['section_id']; ?>&section_name=<?php echo $row['section_name']; ?>&year_level=<?php echo $row['year_level']; ?>">
                       <img src="../admin/Images/update.svg" alt="School ID"
                         class="w-6 h-6">
                     </a>
                   </div>
-                  <div class="bg-red-900 px-2 py-1 rounded-md">
+                  <div class="bg-red-900 hover:bg-red-500 px-2 py-1 rounded-md">
                     <!-- Delete link triggers the form submission with delete action -->
                     <a href="#" onclick="deleteSection(<?php echo $row['section_id']; ?>)">
                       <img src="../admin/Images/delete.svg" alt="School ID"

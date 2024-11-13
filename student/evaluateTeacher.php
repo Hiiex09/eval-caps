@@ -70,10 +70,11 @@ $conn->close();
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assign Teacher to Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-  <h1>Assign Teacher to Section</h1>
+  <h1 class="text-5xl">Assign Teacher to Section</h1>
   <form method="POST" action="">
     <label for="section_id">Select Section:</label>
     <select name="section_id" id="section_id" required>

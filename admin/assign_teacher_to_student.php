@@ -102,89 +102,93 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
   <aside>
     <div class="container">
+      <div class="menu">
+
+      </div>
+      <hr>
       <div class="fixed bottom-0 left-0 top-0 z-50 w-[260px] border shadow">
         <div class=" text-2xl text-center hover:bg-blue-900 hover:text-white py-1 rounded-sm cursor-pointer">
           <a href="adminDashboard.php" class="cursor-pointer">Dashboard</a>
         </div>
         <div class="flex flex-col justify-evenly item-center text-center gap-2 mt-5">
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2 cursor-pointer">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/student_side.svg" alt="student_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/student_view.php">Manage Student</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/teacher-svgrepo-com.svg" alt="teacher_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/teacher_view.php">Manage Teacher</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer ms-[-25px]">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer ms-[-25px]">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/user_side.svg" alt="user_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="">Manage User</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2  hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer ms-[18px]">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2  hover:bg-gray-400 py-2  cursor-pointer ms-[18px]">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/academic_side.svg" alt="academic_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/academic_create.php">Manage Academic</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] 
-            py-2 hover:text-white cursor-pointer ms-[35px]">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 
+            py-2  cursor-pointer ms-[35px]">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/department_side.svg" alt="department_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/department_create.php">Manage Department</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/section_side.svg" alt="section_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/section_create.php">Manage Section</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/criteria_side.svg" alt="criteria_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/criteria_create.php">Manage Criteria</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/subject_side.svg" alt="subject_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../admin/subject_create.php">Manage Subject</a>
             </div>
           </div>
-          <div class="flex justify-center item-center gap-2 hover:bg-[#161D6F] py-2 hover:text-white cursor-pointer">
-            <div class="h-10 w-10 border ms-[-63px]">
-              <img src="#" alt="">
+          <div class="flex justify-center item-center gap-2 hover:bg-gray-400 py-2  cursor-pointer">
+            <div class="h-10 w-10 ms-[-63px]">
+              <img src="../admin/img_side/archive_side.svg" alt="archive_sidebar">
             </div>
             <div class="mt-2 text-lg mx-1">
               <a href="">Archive</a>
             </div>
           </div>
           <div class="flex justify-center 
-            item-center gap-2 hover:bg-[#161D6F] 
-              py-2 hover:text-white ms-[-73px]">
-            <div class="h-10 w-10 border">
-              <img src="#" alt="">
+            item-center gap-2 hover:bg-gray-400 
+              py-2  ms-[-73px]">
+            <div class="h-10 w-10">
+              <img src="../admin/img_side/logout_side.svg" alt="logout_sidebar">
             </div>
             <div class="mt-2 text-lg">
               <a href="../logout.php">Logout</a>
@@ -209,7 +213,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               name="student_id"
               id="student"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-blackpy-3 py-3 px-3 w-[300px]">
               <?php
               // Fetch only irregular students from the database
               $query = $conn->query("SELECT s.student_id, s.name FROM tblstudent s JOIN tblstudent_section ss ON s.student_id = ss.student_id WHERE ss.is_regular = 0");
@@ -232,7 +236,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               name="teacher_id"
               id="teacher"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-black py-3 px-3 w-[300px]">
               <?php
               // Fetch teachers from the database
               $query = $conn->query("SELECT teacher_id, name FROM tblteacher");
@@ -255,7 +259,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               name="subject_id"
               id="subject"
               required
-              class="border-2 rounded-md text-black py-1 px-4">
+              class="border-2 rounded-md text-black py-3 px-3 w-[300px]">
               <?php
               // Fetch subjects from the database
               $query = $conn->query("SELECT subject_id, subject_name FROM tblsubject");
@@ -272,7 +276,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       <div class="m-4 flex justify-start items-start ">
         <div class="relative z-10">
           <button type="submit"
-            class="px-12 py-3 bg-blue-900 rounded-md text-white">
+            class="px-12 py-3 bg-blue-900 hover:bg-blue-500 rounded-md text-white">
             Deploy Assignation
             <img
               src="../admin/Images/assign.svg"

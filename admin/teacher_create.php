@@ -47,11 +47,12 @@ function addTeacher($conn, $school_id, $fname, $lname, $department_id, $file)
 
     // Execute the prepared statement
     if ($stmt->execute()) {
+
       echo "<script>alert('Teacher created successfully!');</script>";
     } else {
       echo "<script>alert('Error creating teacher: " . $stmt->error . "');</script>";
     }
-
+    header('Location: teacher_view.php');
     // Close the statement
     $stmt->close();
   } else {
@@ -96,9 +97,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
 
           <div class="group">
             <label>School Id:</label>
-            <input class="control ctrl1" 
-              type="text" minlength="7" maxlength="7" 
-              name="school_id" autocomplete="off" 
+            <input class="control ctrl1"
+              type="text" minlength="7" maxlength="7"
+              name="school_id" autocomplete="off"
               placeholder="Enter your school id" value="<?php echo isset($schoolId); ?>">
           </div><br>
 
